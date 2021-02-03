@@ -1,0 +1,92 @@
+.linkai a,.linkai li{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    display: inline;
+}
+
+.linkas1 a:hover{
+    color: red;
+}
+
+.linkas2 a:visited{
+    color: yellow;
+}
+
+.linkas3 a:active{
+    color: pink;
+}
+
+.linkas4 a:hover{
+    color: purple;
+}
+
+
+.text::before{
+    color: royalblue;
+    content: "tekstas ikeltas pries ";
+}
+.text1::after{
+    color: royalblue;
+    content: " tekstas ikeltas po";
+}
+.img::before, .img1::after{
+    content: url(https://www.toocool2betrue.com/content/142065/e473256bce80e755d09b347924d96fd9.jpg);
+}
+.el::before, .el1::after{
+    content: "";
+    display:inline-block;
+    background-color:royalblue;
+    width: 20px;
+    height: 10px;
+}
+.trecia p::selection{
+    background-color: slateblue;
+}
+.raide::first-letter{
+    color: green;
+}
+.eil::first-line{
+    background-color: greenyellow;
+}
+.nelyg li:nth-child(odd){
+    background-color: hotpink;
+}
+.lyg li:nth-child(even){
+    background-color: indianred;
+}
+.pasir li:nth-child(4){
+     background-color: blue;
+}
+.first li:first-child{
+    background-color: cadetblue;
+}
+.last li:last-child{
+    background-color: cyan;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    position: relative;
+}
+@keyframes melyna {
+    to {background-color: blue;}
+  }
+.spalva:hover{
+    animation: melyna 5s infinite;
+}
+@keyframes dideja {
+    to {width: 300px;}
+}
+.dydis:hover{
+    animation: dideja 2s infinite;
+}
+@keyframes juda {
+    from {left: 0}
+    to {left: 100px;}
+}
+.pozicija:hover {
+    animation: juda 2s infinite;
+}
